@@ -1,0 +1,7 @@
+<h3>Learn Ajax</h3>
+
+<ul>
+	<li>load data without refresh</li>
+	<li>change content without refresh</li>
+	<li>load images</li>
+</ul>
