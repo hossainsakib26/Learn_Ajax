@@ -20,7 +20,8 @@ function loadDoc() {
 	//-------------------------------
 	// Get page contenet
 	//-------------------------------
-	xhttpRequest.open("GET", "http://localhost/Learn_Ajax/html/ajax_info.html");
+	//xhttpRequest.open("GET", "http://localhost/Learn_Ajax/html/ajax_info.html");
+	xhttpRequest.open("GET", "http://localhost:5000/html/ajax_info.html");
 	//xhttpRequest.setRequestHeader('Access-Control-Allow-Origin:', '*');
 	xhttpRequest.setRequestHeader('Content-Type', 'application/text');
 
