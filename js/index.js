@@ -7,13 +7,22 @@ function loadDoc() {
 
 	xhttpRequest.onload = function () {
 		document.getElementById("getData").innerHTML = this.responseText;
-		console.log(xhttpRequest);
+
+		//console.log(xhttpRequest.response); // show the fake api response
 	}
 
-	xhttpRequest.open("GET", "http://localhost:5000/ajax_info.html");
-	console.log(xhttpRequest.getAllResponseHeaders());
+	//-------------------------------
+	// Get content from fake api generator
+	//-------------------------------
+	// xhttpRequest.open("GET", "https://jsonplaceholder.typicode.com/todos/1"); // fake api responder website
+	// xhttpRequest.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+	
+	//-------------------------------
+	// Get page contenet
+	//-------------------------------
+	xhttpRequest.open("GET", "http://localhost/Learn_Ajax/html/ajax_info.html");
 	//xhttpRequest.setRequestHeader('Access-Control-Allow-Origin:', '*');
-	httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhttpRequest.setRequestHeader('Content-Type', 'application/text');
 
   	xhttpRequest.send();
 
